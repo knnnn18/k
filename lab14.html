@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ccc.css">
+</head>
+<body>
+    <div class="profile">
+        <div class="notify">
+            <p>1</p>
+        </div>
+    </div>
+    <h1 id="username">Username, hi</h1>
+    <label>Set username</label><input id="input name" type="text"><button>set</button>
+    <label>Set username</label><input id="input url" type="text"><button>set</button>
+
+    <input type="text">
+    <input type="text">
+    <button onclick="addRow()">add</button>
+    <table id = "table">
+        <tr>
+            <th>name</th>
+            <th>phone</th>
+        </tr>
+    </table>
+
+    <script>
+        const name= document.getElementById("username");
+        const inputName= document.getElementById("input name");
+        const profile = document.getElementById("profile");
+        const inputUrl = document.getElementById("input url");
+        const table = document.getElementById("table");
+        function setName(){
+            name.textContent = inputName.value  + " ,  oh";
+            inputName.value = "";
+        }
+        function setImg(){
+            profile.style.backgroundImage = "url(" + inputUrl.value
+        }
+        function addRow(){
+            const row = document.createElement("tr");
+            const cel1 = document.createElement("td");
+            const cel2 = document.createElement("td");
+            cel1.textContent
+            cel2.textContent
+        }
+    </script>
+</body>
+</html>

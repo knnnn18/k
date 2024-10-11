@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="ccc.css">
 </head>
 <body>
+    <h1 id="username">Noramon Sikaress 67070241</h1>
     <div class="profile">
         <div class="notify">
             <p>1</p>
         </div>
     </div>
-    <h1 id="username">Username, hi</h1>
-    <label>Set username</label><input id="input name" type="text"><button>set</button>
-    <label>Set username</label><input id="input url" type="text"><button>set</button>
+    <label>Set username</label><input id="input name" type="text"><button onclick="setName()">set</button>
+    <label>Set username</label><input id="input url" type="text"><button onclick="setImg()">set</button>
 
     <input type="text">
     <input type="text">
@@ -33,19 +33,28 @@
         const inputUrl = document.getElementById("input url");
         const table = document.getElementById("table");
         function setName(){
-            name.textContent = inputName.value  + " ,  oh";
+            name.textContent = inputName.value  + " ,  nice to see u!";
             inputName.value = "";
-        }
+        };
         function setImg(){
-            profile.style.backgroundImage = "url(" + inputUrl.value
-        }
+            document.getElementById("your-id").style.backgroundImage = "url(" + document.getElementById("your-id").value + ")";
+            document.getElementById("your-id").value = "";
+        };
         function addRow(){
+            ____ += 1;
             const row = document.createElement("tr");
             const cel1 = document.createElement("td");
             const cel2 = document.createElement("td");
-            cel1.textContent
-            cel2.textContent
-        }
+            const cel3 = document.createElement("td");
+            cel1.textContent = count;
+            cel2.textContent = document.getElementById("your-id").value;
+            cel3.textContent = document.getElementById("your-id").value;
+            row.appendChild(cel1);
+            row.appendChild(cel2);
+            row.appendChild(cel3);
+            const table = document.getElementById("your-id");
+            table.appendChild(row);
+        };
     </script>
 </body>
 </html>

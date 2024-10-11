@@ -35,26 +35,20 @@
         function setName(){
             name.textContent = inputName.value  + " ,  nice to see u!";
             inputName.value = "";
-        };
+        }
         function setImg(){
-            document.getElementById("your-id").style.backgroundImage = "url(" + document.getElementById("your-id").value + ")";
-            document.getElementById("your-id").value = "";
-        };
+            profile.style.backgroundImage = "url(" + inputUrl.value + ")";
+        }
         function addRow(){
-            ____ += 1;
             const row = document.createElement("tr");
             const cel1 = document.createElement("td");
             const cel2 = document.createElement("td");
-            const cel3 = document.createElement("td");
-            cel1.textContent = count;
-            cel2.textContent = document.getElementById("your-id").value;
-            cel3.textContent = document.getElementById("your-id").value;
+            cel1.textContent = "Ummm"
+            cel2.textContent = "12345678"
             row.appendChild(cel1);
             row.appendChild(cel2);
-            row.appendChild(cel3);
-            const table = document.getElementById("your-id");
             table.appendChild(row);
-        };
+        }
     </script>
 </body>
 </html>
